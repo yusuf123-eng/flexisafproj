@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & GitHub Tutorial</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f0f0f0;
+        }
+        header {
+            background: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .sidebar {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        .content {
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .box {
+            background: #ecf0f1;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        code {
+            background: #ddd;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Version Control: Learn Git & GitHub</header>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Topics</h3>
+            <ul>
+                <li><a href="#create-repo">Creating a Repository</a></li>
+                <li><a href="#clone-repo">Cloning a Repository</a></li>
+                <li><a href="#branches">Creating & Managing Branches</a></li>
+                <li><a href="#commits">Committing & Reverting</a></li>
+                <li><a href="#pull-push">Pulling & Pushing Changes</a></li>
+                <li><a href="#merging">Merging & Renaming Branches</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <div class="box">
+                <h2 id="create-repo">Creating a Repository</h2>
+                <p><strong>Definition:</strong> A repository is a storage location where your project files and their version history are kept.</p>
+                <p><strong>Example:</strong> To create a repository, navigate to GitHub and click on 'New Repository'. Follow the prompts to initialize it.</p>
+            </div>
+            
+            <div class="box">
+                <h2 id="clone-repo">Cloning a Repository</h2>
+                <p><strong>Definition:</strong> Cloning a repository means making a local copy of a remote repository on your computer.</p>
+                <p><strong>Example:</strong> Use the command <code>git clone [repository URL]</code> to copy a repository to your local machine.</p>
+            </div>
+            
+            <div class="box">
+                <h2 id="branches">Creating and Managing Branches</h2>
+                <p><strong>Definition:</strong> Branching allows you to work on new features or fixes without affecting the main codebase.</p>
+                <p><strong>Example:</strong> Create a new branch using <code>git branch branch-name</code> and switch to it using <code>git checkout branch-name</code>.</p>
+            </div>
+            
+            <div class="box">
+                <h2 id="commits">Committing and Reverting Commits</h2>
+                <p><strong>Definition:</strong> A commit is a snapshot of your code at a specific time, while reverting undoes previous commits.</p>
+                <p><strong>Example:</strong> Use <code>git commit -m "message"</code> to save changes and <code>git revert commit-hash</code> to undo a commit.</p>
+            </div>
+            
+            <div class="box">
+                <h2 id="pull-push">Pulling and Pushing Changes</h2>
+                <p><strong>Definition:</strong> Pulling updates your local repository with remote changes, while pushing uploads your changes to the remote repository.</p>
+                <p><strong>Example:</strong> Use <code>git pull origin main</code> to fetch changes and <code>git push origin branch-name</code> to upload changes.</p>
+            </div>
+            
+            <div class="box">
+                <h2 id="merging">Merging and Renaming Branches</h2>
+                <p><strong>Definition:</strong> Merging combines changes from different branches, while renaming changes a branch's name.</p>
+                <p><strong>Example:</strong> Merge branches using <code>git merge branch-name</code> and rename with <code>git branch -m old-name new-name</code>.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
