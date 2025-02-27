@@ -51,11 +51,11 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .box {
+        .definition-box, .example-box {
             background: #ecf0f1;
             padding: 15px;
             border-left: 5px solid #3498db;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             border-radius: 8px;
         }
         h2 {
@@ -92,40 +92,52 @@
             </ul>
         </aside>
         <main class="content">
-            <div class="box">
-                <h2 id="create-repo">Creating a Repository</h2>
-                <p><strong>Definition:</strong> A repository is a storage location where your project files and their version history are kept.</p>
-                <p><strong>Example:</strong> To create a repository, navigate to GitHub and click on 'New Repository'. Follow the prompts to initialize it.</p>
+            <h2 id="create-repo">Creating a Repository</h2>
+            <div class="definition-box">
+                <strong>Definition:</strong> A repository is a storage location where your project files and their version history are kept.
             </div>
-            
-            <div class="box">
-                <h2 id="clone-repo">Cloning a Repository</h2>
-                <p><strong>Definition:</strong> Cloning a repository means making a local copy of a remote repository on your computer.</p>
-                <p><strong>Example:</strong> Use the command <code>git clone [repository URL]</code> to copy a repository to your local machine.</p>
+            <div class="example-box">
+                <strong>Example:</strong> To create a repository, navigate to GitHub and click on 'New Repository'. Follow the prompts to initialize it.
             </div>
-            
-            <div class="box">
-                <h2 id="branches">Creating and Managing Branches</h2>
-                <p><strong>Definition:</strong> Branching allows you to work on new features or fixes without affecting the main codebase.</p>
-                <p><strong>Example:</strong> Create a new branch using <code>git branch branch-name</code> and switch to it using <code>git checkout branch-name</code>.</p>
+
+            <h2 id="clone-repo">Cloning a Repository</h2>
+            <div class="definition-box">
+                <strong>Definition:</strong> Cloning a repository means making a local copy of a remote repository on your computer.
             </div>
-            
-            <div class="box">
-                <h2 id="commits">Committing and Reverting Commits</h2>
-                <p><strong>Definition:</strong> A commit is a snapshot of your code at a specific time, while reverting undoes previous commits.</p>
-                <p><strong>Example:</strong> Use <code>git commit -m "message"</code> to save changes and <code>git revert commit-hash</code> to undo a commit.</p>
+            <div class="example-box">
+                <strong>Example:</strong> Use the command <code>git clone [repository URL]</code> to copy a repository to your local machine.
             </div>
-            
-            <div class="box">
-                <h2 id="pull-push">Pulling and Pushing Changes</h2>
-                <p><strong>Definition:</strong> Pulling updates your local repository with remote changes, while pushing uploads your changes to the remote repository.</p>
-                <p><strong>Example:</strong> Use <code>git pull origin main</code> to fetch changes and <code>git push origin branch-name</code> to upload changes.</p>
+
+            <h2 id="branches">Creating and Managing Branches</h2>
+            <div class="definition-box">
+                <strong>Definition:</strong> Branching allows you to work on new features or fixes without affecting the main codebase.
             </div>
-            
-            <div class="box">
-                <h2 id="merging">Merging and Renaming Branches</h2>
-                <p><strong>Definition:</strong> Merging combines changes from different branches, while renaming changes a branch's name.</p>
-                <p><strong>Example:</strong> Merge branches using <code>git merge branch-name</code> and rename with <code>git branch -m old-name new-name</code>.</p>
+            <div class="example-box">
+                <strong>Example:</strong> Create a new branch using <code>git branch branch-name</code> and switch to it using <code>git checkout branch-name</code>.
+            </div>
+
+            <h2 id="commits">Committing and Reverting Commits</h2>
+            <div class="definition-box">
+                <strong>Definition:</strong> A commit is a snapshot of your code at a specific time, while reverting undoes previous commits.
+            </div>
+            <div class="example-box">
+                <strong>Example:</strong> Use <code>git commit -m "message"</code> to save changes and <code>git revert commit-hash</code> to undo a commit.
+            </div>
+
+            <h2 id="pull-push">Pulling and Pushing Changes</h2>
+            <div class="definition-box">
+                <strong>Definition:</strong> Pulling updates your local repository with remote changes, while pushing uploads your changes to the remote repository.
+            </div>
+            <div class="example-box">
+                <strong>Example:</strong> Use <code>git pull origin main</code> to fetch changes and <code>git push origin branch-name</code> to upload changes.
+            </div>
+
+            <h2 id="merging">Merging and Renaming Branches</h2>
+            <div class="definition-box">
+                <strong>Definition:</strong> Merging combines changes from different branches, while renaming changes a branch's name.
+            </div>
+            <div class="example-box">
+                <strong>Example:</strong> Merge branches using <code>git merge branch-name</code> and rename with <code>git branch -m old-name new-name</code>.
             </div>
         </main>
     </div>
